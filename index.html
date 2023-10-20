@@ -9,6 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/styles.css" />
 
@@ -16,51 +17,48 @@
   </head>
   <body class="body">
     <div class="container">
-        <div class="weather-app-wrapper">
-      <div class="weather-app">
-        <div class="overview">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1 class="city" id="city">Johannesburg</h1>
 
-            
-            <h1 class="city">Johannesburg</h1>
-            
             <ul>
-                <li>Friday, 05:00</li>
-                <li>Clear</li>
-            </ul>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="d-flex weather-temperature">
-
-                    <img
-                    src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                    alt="Clear with Clouds"
-                    class="flex-start"
-                    />
-                    <div class="flex-start">
-
-                        <strong>12</strong><span class="units">°C | <a href="#">°F</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-            <ul>
-                <li>Humidity: 0%</li>
-              <li>Wind: 5km/h</li>
+              <li id="date-time">Friday, 05:00</li>
+              <li id="weather-description">Clear</li>
             </ul>
           </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+                  alt="Clear with Clouds"
+                  class="flex-start"
+                />
+                <div class="flex-start">
+                  <strong id="temperature"></strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    <small>
-      <a
-        href="https://github.com/Tashingaaa/project-weather"
-        target="_blank"
-        >Open-source code</a
-        >
-        by Tashinga Mlilwana
-    </small>
-</div>
+        <small>
+          <a
+            href="https://github.com/Tashingaaa/project-weather"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Tashinga Mlilwana
+        </small>
+      </div>
       <script src="src/app.js"></script>
     </div>
   </body>
